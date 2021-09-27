@@ -13,6 +13,7 @@ public class BasePage {
 @FindBy(xpath = "(//a[@href='/index.php/apps/files/'])[1]")
     public WebElement fileMenu;
 
+
 @FindBy(xpath = "(//a[@aria-label='Activity'])[1]")
     public WebElement activityMenu;
 
