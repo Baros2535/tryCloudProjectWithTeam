@@ -11,7 +11,7 @@ plugin = {"json:target/cucumber.json",
         features = "src/test/resources/features",
         glue = "net/tryCloud/stepDefs",
         dryRun = false,
-        tags = "@wip"
+        tags = "@SelimBurakMutlu"
 
 
 )
