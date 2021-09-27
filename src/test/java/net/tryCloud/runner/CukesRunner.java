@@ -10,7 +10,7 @@ plugin = {"json:target/cucumber.json",
            "html:target/default_html_report"},
         features = "src/test/resources/features",
         glue = "net/tryCloud/stepDefs",
-        dryRun = true,
+        dryRun = false,
         tags = "@wip"
 
 
