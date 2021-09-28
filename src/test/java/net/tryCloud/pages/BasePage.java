@@ -10,7 +10,7 @@ import java.util.List;
 public class BasePage {
     public BasePage() {
         PageFactory.initElements( Driver.get(), this);
-    }\
+    }
 // 14 ile 31 arasini ekledim
     @FindBy(css = "#appmenu>[data-id]")
     public List<WebElement> appMenu;
