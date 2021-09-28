@@ -5,10 +5,30 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class BasePage {
     public BasePage() {
         PageFactory.initElements( Driver.get(), this);
     }
+// 14 ile 31 arasini ekledim
+    @FindBy(css = "#appmenu>[data-id]")
+    public List<WebElement> appMenu;
+
+    public WebElement fileMenu = appMenu.get(0);
+    public WebElement activityMenu = appMenu.get(1);
+    public WebElement galleryMenu = appMenu.get(2);
+    public WebElement talkMenu = appMenu.get(3);
+    public WebElement calendarMenu = appMenu.get(4);
+    public WebElement deckMenu = appMenu.get(5);
+    public WebElement announcementsMenu = appMenu.get(6);
+
+    @FindBy(css = "#expanddiv [data-id]")
+    public List<WebElement> avatarMenu;
+
+    public WebElement settingsIcon = avatarMenu.get(0);
+    public WebElement helpIcon = avatarMenu.get(1);
+    public WebElement logoutIcon = avatarMenu.get(2);
 
 @FindBy(xpath = "(//a[@href='/index.php/apps/files/'])[1]")
     public WebElement fileMenu;
