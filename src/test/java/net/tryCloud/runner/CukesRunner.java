@@ -10,8 +10,8 @@ plugin = {"json:target/cucumber.json",
            "html:target/default_html_report"},
         features = "src/test/resources/features",
         glue = "net/tryCloud/stepDefs",
-        dryRun = false,
-        tags = "@SelimBurakMutlu"
+        dryRun = true,
+        tags = "@wip"
 
 
 )

@@ -44,14 +44,14 @@ public class addPictureStepDefs {
     public void theUserSendsFilePathAddressOfImageToUploadIcon() {
         BrowserUtils.waitFor(2);
 
-        galleryPage.upload.sendKeys("C:\\Users\\ASUS\\Desktop\\Picture1.JPG");
+        galleryPage.uploadPicture.sendKeys("C:\\Users\\ASUS\\Desktop\\Picture1.JPG");
 
 
 
 
     }
 
-    @And("original image name must be the same with uploaded image")
+    @And("original image name must be the same with uploaded picture")
     public void originalImageNameMustBeTheSameWithUploadedImage() {
 
         String expectedName="Picture1.JPG";
