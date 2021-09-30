@@ -3,6 +3,7 @@ package net.tryCloud.stepDefs;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.tryCloud.pages.LoginPage;
 import net.tryCloud.utilities.ConfigurationReader;
 import net.tryCloud.utilities.Driver;
 import org.junit.Assert;
@@ -15,12 +16,12 @@ public class loginStepDefs {
     }
     @When("the user logged in with {string} {string}")
     public void the_user_logged_in_with(String userName, String passWord) {
-
+       new LoginPage().logIN(userName, passWord);
 
     }
     @Then("the user is  on the MainPage")
     public void the_user_is_on_the_main_page() {
-        Assert.assertEquals(Driver.get().getTitle(),"Trycloud");
+        Assert.assertEquals(Driver.get().getTitle(),"Files - Trycloud");
 
     }
 }
